@@ -3662,6 +3662,10 @@ class NDFrame(PandasObject, SelectionMixin):
         """
         Return the last n rows.
 
+        This function simply returns the last n rows.
+        n is the parameter, insert as a interger number, that specify the number of rows you want to see.
+        If no number is inputing as parameter, return the last 5 rows. 
+
         Parameters
         ----------
         n : int, default 5
@@ -3669,12 +3673,12 @@ class NDFrame(PandasObject, SelectionMixin):
 
         Returns
         -------
-        obj_tail : type of caller
+        type of caller
             The last n rows of the caller object.
 
         See Also
         --------
-        pandas.DataFrame.head
+        pandas.DataFrame.head : The first n rows of the caller object.
 
         Examples
         --------
